@@ -14,7 +14,10 @@ class MasterPlanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PlanProvider(
-      notifier: ValueNotifier<List<Plan>>(const []),
+      //PlanProvider is a custom construtor.
+      //it has two requried filed name child and notifier
+      //notifier in..list 
+      notifier: ValueNotifier<List<Plan>>(const []),//why use emty list?
       child: MaterialApp(
         title: 'State management app',
         theme: ThemeData(
